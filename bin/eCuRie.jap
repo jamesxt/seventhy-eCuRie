@@ -5,7 +5,7 @@
 	"token":"Seventhy!.jxshell.eCuRie",
 	"assemblydirectories":["../DbLinq_020", "../MySQL"],
 	"references":{
-		"file":["../DbLinq_020/DbLinq.dll", "../DbLinq_020/DbLinq.MySql.dll", "../MySQL/mysql.data.dll"], 
+		"file":["../DbLinq_020/DbLinq.dll", "../DbLinq_020/DbLinq.MySql.dll", "../MySQL/MySql.Data.dll"], 
 		"byPartialName":["System","System.Windows.Forms", "System.Data.Linq", "System.Data"],
 		"byName":[],
 		"libraries":["jxshell.webapp version=2.0"],
