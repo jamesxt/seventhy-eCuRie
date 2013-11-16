@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title></title>
+		
+
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script type='text/javascript' src='js/ecurie.js'></script>
+    <script type='text/javascript' src='js/ecurie.session.js'></script>
+    <script type='text/javascript' src='js/ecurie.colorbox.js'></script>
+    <script type='text/javascript' src='js/ecurie.users.js'></script>
+		<script type='text/javascript' src='js/jquery.js'></script>
+
+
+    <script type="text/javascript">
+
+     window.addEventListener('app-ready', function(){
+
+        window.frame.height=360;
+        window.frame.width=660;
+        window.frame.center();
+
+
+    });
+  
+
+	window.addEventListener('xapp-ready', function(){
+		try{
+			window.eCuRie.usuarios.INDEXInit();
+		}
+		catch(e){
+			//alert(e);
+		}	
+
+    });
+
+
+    </script>
+	</head>
+
+
+	<body>
+		<header><h1>eCuRie</h1></header>
+		<div id="content">
+
+			<div style='height:32px'></div>
+
+			<div class='left' id='left'>
+				<div align='center' style='width:100%' class='border-right'>
+					<img src='images/w.jpg' style='max-width:210px;width:60%'/>
+				</div>
+
+			</div>
+      <div class='left' id='center'></div>
+		
+		<div class='left' id='right'>
+
+
+        <div style='width:100%;max-width:330px;'>
+          <div style='height:10px'></div>
+
+          <div style='width:275px;display:none;' class='div-error' id='login-info'>
+          	El usuario o contraseña es incorrecto
+          </div>
+
+
+          <div style='height:14px'></div>
+          <table border='0' cellspacing='0' cellpading='0' style='width:270px;table-layout:fixed;' >
+            <tr>
+              <td class='login-label'>
+  				      Usuario 
+              </td>
+              
+              <td class='login-spacing'></td>
+
+              <td class='login-text'>
+      				  <input type='text' id='login-usuario'/>
+              </td>
+            </tr>
+            <tr>
+      				<td>
+                <div style='height:8px'></div>
+              </td>
+            </tr>
+            <tr>
+              <td class='login-label'>
+      				  Contraseña
+              </td>
+              <td class='login-spacing'></td>
+              <td class='login-text'>
+      				  <input type='password' id='login-contraseña'/>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Ahora los botones -->
+          <div style='height:10px'></div>
+          <div id='login-loading'>
+          	<img src='images/loading.gif' style='height:20px;float:left;'/>
+          	<div style='padding-left:6px;padding-top:2px;display:inline-block;float:left;font-size:11px' >Espere un momento</div>
+          </div>
+
+          <div style='height:9px;float:none;'></div>
+        
+          <button id='login-aceptar'>Aceptar</button>
+          <button id='login-cancelar'>Cancelar</button>
+        </div>
+			</div>
+
+			<div style='height:32px'></div>
+			
+
+		</div>
+
+		<footer></footer>
+	</body>	
+</html>

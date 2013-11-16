@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script type='text/javascript' src='js/ecurie.js'></script>
+	    <script type='text/javascript' src='js/ecurie.session.js'></script>
+	    <script type='text/javascript' src='js/ecurie.colorbox.js'></script>
+	    <script type='text/javascript' src='js/ecurie.users.js'></script>
+	    <script type='text/javascript' src='js/ecurie.clients.js'></script>
+	    <script type='text/javascript' src='js/jxshell.select.js'></script>
+		<script type='text/javascript' src='js/jquery.js'></script>
+		<script type='text/javascript' src='js/jxshell.grid.js'></script>
+
+
+    <script type="text/javascript">
+
+    window.onready=function(){
+	    window.eCuRie.usuarios.WELCOMEInit();
+
+    }
+     window.addEventListener('app-ready', function(){
+
+        window.frame.height=600;
+        window.frame.width=800;
+        window.frame.center();
+
+
+    });
+
+
+	window.addEventListener('xapp-ready', function(){
+		try{
+			//window.eCuRie.usuarios.INDEXInit();
+			//window.eCuRie.usuarios.WELCOMEInit();
+		}
+		catch(e){
+			alert(e);
+		}	
+    });
+
+
+    </script>
+	</head>
+
+
+	<body>
+		<header><h1>eCuRie</h1>
+
+
+			<!-- div de usuario -->
+			<div id='welcome-user'>
+				<table cellpading='0' cellspacing='0' style='height:100%;'>
+					<tr>
+						<td >
+							<span id='welcome-name' style='float:left;'>Administrador</span>
+						</td>
+						<td style='width:10px;'></td>
+						<td>
+							<img src='images/user.png' id = 'welcome-userimage' style='height:36px;width:36px;float:left;display:inline-block;' />
+						</td>
+					</tr>
+				</table>
+			</div> 
+
+			<div style='display:inline-block;float:right;width:0px;height:100%;'></div>
+
+			<div id='welcome-options'>
+				<div class='op' id='options-back'><img src='images/back.png'/></div>
+			</div>
+
+
+			<!-- Los usuarios -->
+			<div id='welcome-user-config'>
+				<div class='left' style='width:7%;'></div>
+				<div class='left' style='width:33%'>
+					<img src='images/user.png' id='welcome-user-config-image' style='width:100%;height:80%;float:left;display:inline-block;' />
+				</div>
+
+				<div class='left' style='width:3%;border-right:solid 1px rgba(200,200,200,0.2);height:100%;padding:0;'></div>
+				<div class='left' style='width:3%'></div>
+
+
+				<div class='left' style='width:53%;' id='welcome-user-options'>
+					<table cellpading='0' cellspacing='0' style='color:black;'>
+						<tr>
+							<td class='welcome-user-options-td' >
+								Modificar datos de usuario
+							</td>
+						</tr>
+						<tr>
+							<td class='welcome-user-options-td'>
+								Cerrar sesión
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+		</header>
+
+		<div id="content">
+
+			<div id='options'>
+				
+				<!-- Aquí se irá metiendo por código las opciones que se abran -->
+				<div id='options-option'>
+				</div>
+				<!-- Aquí se irá metiendo por código las opciones que se abran -->
+
+				
+
+				<div align='center' id='options-div'>
+				<!-- Opcion1 -->
+				<div id='options-clients' class='options program' index='0'>
+					<img src='images/client.png' />
+					<span>Clientes</span>
+				</div>
+
+				<div class='options separator'>
+				</div>
+
+				<!-- Opcion2 -->
+				<div id='options-products' class='options program' index='1'>
+					<img src='images/productos.png' />
+					<span>Productos</span>
+				</div>
+
+				<div class='options separator'>
+				</div>
+
+				<!-- Opcion3 -->
+				<div id='options-facturas' class='options program' index='2'>
+					<img src='images/facturas.jpg' />
+					<span>Facturas</span>
+				</div>
+
+				<div class='options separator'>
+				</div>
+
+				<!-- Opcion3 -->
+				<div id='options-backup' class='options program' index='3'>
+					<img src='images/backup.jpg' />
+					<span>Copias seguridad</span>
+				</div>
+
+				<div class='options separator'>
+				</div>
+
+				<!-- Opcion3 -->
+				<div id='options-users' class='options program' index='4'>
+					<img src='images/users.png' />
+					<span>Usuarios</span>
+				</div>
+
+
+				<div class='options separator'>
+				</div>
+
+				<!-- Opcion3 -->
+				<div id='options-kardex' class='options program' index='5'>
+					<img src='images/inventario.jpg' />
+					<span>Inventario</span>
+				</div>
+
+				</div>
+			</div>
+
+			<div style='height:20px;'></div>
+
+		</div>
+
+		<footer></footer>
+	</body>	
+</html>
